@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/*hachi maru style*/
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap');
+/*caveat*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+body{
+  /*
+  background: rgb(0,250,154);
+background: linear-gradient(20deg, rgba(0,250,154,1) 28%, rgba(0,212,255,1) 72%) no-repeat;
+*/
+background: rgb(235, 235, 235) !important;
+height:auto !important
+  
+}
+
+.page {
+ 
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    
+  }
+  
+  .page-enter {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  
+  .page-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .page-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .page-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .btn-card-navigation-image{
+    transition: all 1s ease-in-out;
+  }
+
+  /*custom*/
+  .btn-card-navigation:hover .btn-card-navigation-image {
+    filter: blur(3px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+  }
+
+  //page titles
+
+
+  .pageTitlecontainer {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.pageTitlecontainer > .pageTitle {
+    position: relative;
+    display: inline-block;
+}
+
+.pageTitlecontainer > .pageTitle:before,
+.pageTitlecontainer > .pageTitle:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    background:#ffd900;
+}
+
+.pageTitlecontainer > .pageTitle:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.pageTitlecontainer > .pageTitle:after {
+    left: 100%;
+    margin-left: 15px;
+}
+  
+
+.about-image{
+  border-radius: 100%;
+}
+
+
+
+
+/*xs devices*/
+@media screen and (max-width:400px){
+    .about-image{
+        height: 65% !important;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:401px){
+  .about-image{
+      height: 100% !important;
+      width: 70%;
+  }
+}
